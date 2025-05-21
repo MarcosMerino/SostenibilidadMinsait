@@ -5,7 +5,8 @@ USE SostenibilidadMinsait;
 CREATE TABLE IF NOT EXISTS usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nombre varchar(40),
-    fecha DATE
+    fecha DATE,
+    password varchar(80)
 )engine = InnoDB;
 
 CREATE TABLE IF NOT EXISTS organizadores(
