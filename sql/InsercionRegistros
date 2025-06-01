@@ -1,11 +1,11 @@
 USE SostenibilidadMinsait;
 -- Insertar usuarios
-INSERT INTO usuarios (nombre, fecha) VALUES
-('Ana López', '2024-05-10'),
-('Carlos Pérez', '2024-06-15'),
-('María Sánchez', '2024-05-20'),
-('Luis Gómez', '2024-07-01'),
-('Sofía Martínez', '2024-05-25');
+INSERT INTO usuarios (nombre, fecha, password) VALUES
+('Ana López', '2024-05-10','ana1234'),
+('Carlos Pérez', '2024-06-15','carlos1234'),
+('María Sánchez', '2024-05-20','maria1234'),
+('Luis Gómez', '2024-07-01', 'luis1234'),
+('Sofía Martínez', '2024-05-25', 'sofia1234');
 
 -- Insertar organizadores
 INSERT INTO organizadores (nombre, email, password) VALUES
