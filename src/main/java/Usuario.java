@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Date;
 
 public class Usuario {
@@ -74,6 +73,10 @@ public class Usuario {
             else System.out.println("El evento ya ha tenido lugar");
         }
         else System.out.println("El evento está cancelado, no puedes renovar tu asistencia");
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 
     @Override

@@ -9,6 +9,10 @@ public class Categoria {
         this.descripcion = descripcion;
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         return "Categoria{" +

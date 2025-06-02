@@ -9,6 +9,10 @@ public class Ubicacion {
         this.direccion = direccion;
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         return "Ubicacion{" +

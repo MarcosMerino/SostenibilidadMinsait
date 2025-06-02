@@ -48,6 +48,10 @@ public class Evento {
         return organizador;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
     @Override
     public String toString() {
         return "Evento{" +
