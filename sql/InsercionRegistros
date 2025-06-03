@@ -33,11 +33,11 @@ INSERT INTO categorias (nombre, descripcion) VALUES
 
 -- Insertar eventos
 INSERT INTO eventos (nombre, fecha, duracion, idUbicacion, idOrganizador, idCategoria) VALUES
-('Taller de Reciclaje Creativo', '2024-06-01', 2.5, 2, 1, 1),
-('Congreso Energía Solar', '2024-07-15', 4.0, 1, 2, 2),
-('Feria Agroecológica', '2024-08-20', 3.0, 3, 3, 3),
-('Webinar Educación Verde', '2024-06-10', 1.5, 4, 4, 4),
-('Ciclismo Urbano Sostenible', '2024-09-05', 2.0, 5, 5, 5);
+('Taller de Reciclaje Creativo', '2025-06-01', 2.5, 2, 1, 1),
+('Congreso Energía Solar', '2025-07-15', 4.0, 1, 2, 2),
+('Feria Agroecológica', '2025-08-20', 3.0, 3, 3, 3),
+('Webinar Educación Verde', '2025-06-10', 1.5, 4, 4, 4),
+('Ciclismo Urbano Sostenible', '2025-09-05', 2.0, 5, 5, 5);
 
 -- Insertar inscripciones
 INSERT INTO inscripciones (idUsuario, idEvento, cancelado) VALUES
