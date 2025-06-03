@@ -23,6 +23,11 @@ main {
   padding: 2em;
 }
 
+article img {
+  width: 300px;
+  height: 600px;
+}
+
 footer {
   background-color: #004080;
   color: white;
@@ -71,6 +76,6 @@ th {
 }
 
 .carousel-slide img {
-  width: 600px;
-  height: 300px;
+  width: 300px;
+  height: 600px;
 }
