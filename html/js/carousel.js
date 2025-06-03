@@ -7,7 +7,7 @@ function nextSlide() {
   if (counter >= images.length) {
     counter = 0;
   }
-  slide.style.transform = `translateX(${-600 * counter}px)`;
+  slide.style.transform = `translateX(${-250 * counter}px)`;
 }
 
 setInterval(nextSlide, 3000);

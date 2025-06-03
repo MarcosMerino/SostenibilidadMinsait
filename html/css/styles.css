@@ -24,8 +24,8 @@ main {
 }
 
 article img {
-  width: 300px;
-  height: 600px;
+  width: 250px;
+  height: 300px;
 }
 
 footer {
@@ -76,6 +76,6 @@ th {
 }
 
 .carousel-slide img {
-  width: 300px;
-  height: 600px;
+  width: 250px;
+  height: 300px;
 }
