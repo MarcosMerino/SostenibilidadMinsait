@@ -2,6 +2,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
+/**
+ * @author MarcosMerino
+ *
+ * @date 04-06-2025
+ *
+ * Clase Organizador
+ * Almacena la información sobre los organizadores registrados que son aquellos que hayan o van a crear un evento
+ */
+
 public class Organizador {
     private int id;
     private String nombre;
@@ -15,6 +24,10 @@ public class Organizador {
         this.password = password;
     }
 
+    /**
+     * Metodo para que un organizador pueda cancelar su evento, controla también si el evento es de este organizador
+     * @param evento evento a cancelar
+     */
     public void cancelarEvento(Evento evento){
         if (evento.getOrganizador().equals(this)){
             evento.cancelarEvento();
@@ -24,6 +37,12 @@ public class Organizador {
         }
     }
 
+    /**
+     * Metodo que permite al organizador crear su propio evento
+     * @param eventos Lista de eventos a la que se va a añadir el nuevo evento
+     * @param categorias Lista de categorías para encontrar la que le corresponda al evento
+     * @param ubicaciones Lista de ubicaciones para añadir el lugar del evento
+     */
     public void generarEvento(ArrayList<Evento> eventos, ArrayList<Categoria> categorias, ArrayList<Ubicacion> ubicaciones) {
         Scanner teclado = new Scanner(System.in).useDelimiter("\n");
         String nombreEvento;

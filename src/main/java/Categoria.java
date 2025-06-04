@@ -1,3 +1,13 @@
+/**
+ * @author MarcosMerino
+ *
+ * @date 04-06-2025
+ *
+ * Clase Categoría
+ * Se encarga de identificar cada evento y organizarlo mediante grupos según su estilo
+ */
+
+
 public class Categoria {
     private int id;
     private String nombre;

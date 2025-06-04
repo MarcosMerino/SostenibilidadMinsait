@@ -1,3 +1,13 @@
+/**
+ * @author MarcosMerino
+ *
+ * @date 04-06-2025
+ *
+ * Clase Inscripcion
+ * Guarda las inscripciones de los usuarios y a que eventos se han registrado
+ * También se encarga de ver si la inscripión se ha cancelado
+ */
+
 public class Inscripcion {
     private int id;
     private Usuario usuario;

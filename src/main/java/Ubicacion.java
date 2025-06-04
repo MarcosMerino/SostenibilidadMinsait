@@ -1,3 +1,12 @@
+/**
+ * @author MarcosMerino
+ *
+ * @date 04-06-2025
+ *
+ * Clase Ubicacion
+ * Clase que guarda la dirección donde dará lugar el evento, ya sea online o presencial
+ */
+
 public class Ubicacion {
     private int id;
     private boolean online;

@@ -1,5 +1,14 @@
 import java.util.Date;
 
+/**
+ * @author MarcosMerino
+ *
+ * @date 04-06-2025
+ *
+ * Clase Usuario
+ * Clase para guardar la información de los usuarios registrados y operar con ella
+ */
+
 public class Usuario {
     private int id;
     private String nombre;
@@ -13,6 +22,10 @@ public class Usuario {
         this.password = password;
     }
 
+    /**
+     * Permite al usuario inscribirse en un evento
+     * @param evento Evento al que se va a inscribir
+     */
     public void generarInscripcion(Evento evento) {
         if (!evento.isCancelado()) {
             if (evento.getFecha().after(new Date())) {
@@ -34,6 +47,10 @@ public class Usuario {
         else System.out.println("El evento está cancelado, no puedes unirte");
     }
 
+    /**
+     * Permite cancelar una inscripción a un evento
+     * @param evento evento del que se quiere quitar
+     */
     public void cancelarAsistencia(Evento evento) {
         boolean encontrado = false;
         if (evento.getFecha().after(new Date())) {
@@ -53,6 +70,11 @@ public class Usuario {
         }
         else System.out.println("El evento ya ha tenido lugar");
     }
+
+    /**
+     * Permite reincorporarse al evento siempre y cuando este siga en pie o no haya tenido lugar
+     * @param evento evento al que se quiere volver a ser capaz de asistir
+     */
     public void renovarAsistencia(Evento evento) {
         if (!evento.isCancelado()) {
             if (evento.getFecha().after(new Date())) {

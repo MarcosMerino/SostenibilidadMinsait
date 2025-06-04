@@ -2,6 +2,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * @author MarcosMerino
+ *
+ * @date 04-06-2025
+ *
+ * Clase Evento
+ * Clase que guarda la información acerca de los eventos creados
+ */
+
 public class Evento {
     private int id;
     private String nombre;
@@ -24,6 +33,10 @@ public class Evento {
         this.inscripciones = new ArrayList<>();
         this.cancelado = false;
     }
+
+    /**
+     * Metodo que recorre todas las inscripciones a este evento y las cancela
+     */
     public void cancelarEvento() {
         for (int i = 0; i < inscripciones.size(); i++) {
             inscripciones.get(i).setCancelado(true);

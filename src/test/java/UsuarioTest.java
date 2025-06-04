@@ -11,6 +11,10 @@ public class UsuarioTest {
     private Categoria categoria;
     private Ubicacion ubicacion;
 
+
+    /**
+     * Prepara la clase para los Test
+     */
     @Before
     public void setUp() {
         usuario = new Usuario("Carlos", "12345");
@@ -20,11 +24,37 @@ public class UsuarioTest {
         evento = new Evento("Concierto", new java.util.Date(System.currentTimeMillis() + 1000000), 1.5f, ubicacion, organizador, categoria);
     }
 
+    /**
+     * Compruba si el usuario es capaz de inscribirse correctamente
+     */
+
     @Test
     public void testGenerarInscripcion() {
         usuario.generarInscripcion(evento);
         List<Inscripcion> inscripciones = evento.getInscripciones();
         assertEquals(1, inscripciones.size());
-        assertEquals(usuario, inscripciones.get(0).getUsuario());
+        assertEquals(usuario, inscripciones.getFirst().getUsuario());
+    }
+
+    /**
+     * Comprueba si el usuario es capaz de cancelar su inscripcion
+     */
+    @Test
+    public void testCancelarInscripcion() {
+        usuario.cancelarAsistencia(evento);
+        List<Inscripcion> inscripciones = evento.getInscripciones();
+        assertEquals(1, inscripciones.size());
+        assertEquals(true, inscripciones.getFirst().isCancelado());
+    }
+
+    /**
+     * Comprueba si el usuario es capaz de renovar su inscripcion
+     */
+    @Test
+    public void testRenovarInscripcion() {
+        usuario.renovarAsistencia(evento);
+        List<Inscripcion> inscripciones = evento.getInscripciones();
+        assertEquals(1, inscripciones.size());
+        assertEquals(false, !inscripciones.getFirst().isCancelado());
     }
 }

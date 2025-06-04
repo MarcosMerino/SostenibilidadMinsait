@@ -5,6 +5,10 @@ import static org.junit.Assert.*;
 
 public class ConfiguracionTest {
 
+
+    /**
+     * Comprueba que la clase configuración realmente inicializa las listas
+     */
     @Test
     public void testInicializarPrograma() {
         ArrayList<Usuario> usuarios = new ArrayList<>();

@@ -1,7 +1,24 @@
 import java.util.ArrayList;
 import java.util.Date;
 
+/**
+ * @author MarcosMerino
+ *
+ * @date 04-06-2025
+ *
+ * Clase Configuracion
+ * Se encarga de inicializar el proyecto con unos parámetros básicos para poder empezar directamente
+ */
 public abstract class Configuracion {
+
+    /**
+     * Crea ciertos registros para darle comienzo y capacidad de prueba al programa desde el minuto 1
+     * @param usuarios Lista de usuarios registrados
+     * @param organizadores Lista de organizadores registrados
+     * @param ubicaciones Lista de ubicaciones registradas
+     * @param categorias Lista de categorias existentes
+     * @param eventos Lista de eventos creados
+     */
     public static void inicializarPrograma(ArrayList<Usuario> usuarios, ArrayList<Organizador> organizadores ,ArrayList<Ubicacion> ubicaciones, ArrayList<Categoria> categorias,ArrayList<Evento> eventos) {
         usuarios.add(new Usuario("Ana Lopez","ana1234"));
         usuarios.add(new Usuario("Carlos Perez","carlos1234"));
